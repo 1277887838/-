@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    text-align: center;
+    font-family: 微软雅黑;
+}
+
+.header {
+    background: #000;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.shelter {
+    background: #000;
+    width: 100%;
+    height: 150px;
+    margin-top: -150px;
+    position: fixed;
+    z-index: 1;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 60px;
+}
+
+.box {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.itme {
+
+}
+
+.itme li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.itme h1 {
+    font-size: 25px;
+    color: #000;
+    text-align: left;
+    line-height: 80px;
+}
+
+#meum {
+    position: fixed;
+    top: 300px;
+    left: 100px;
+}
+
+#meum li {
+    list-style: none;
+    position: relative;
+    width: 140px;
+    height: 60px;
+}
+
+#meum li a:hover, #meum li .text_hover {
+    color: #fff;
+    background: #000;
+    transition: all .3s ease-in-out;
+}
+
+#meum li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    width: 140px;
+    height: 40px;
+    display: block;
+    transition: all .3s ease-in-out;
+
+}
+
+#banner {
+    position: relative;
+    width: 1920px;
+    height: 600px;
+    border: 1px solid #666;
+    overflow: hidden;
+}
+
+#banner_list img {
+    border: 0px;
+}
+
+#banner_bg {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    height: 30px;
+    filter: Alpha(Opacity=30);
+    opacity: 0.3;
+    z-index: 1000;
+}
+
+#banner ul {
+    position: absolute;
+    filter: Alpha(Opacity=80);
+    opacity: 0.8;
+    z-index: 1002;
+    width: 400px;
+    height: 20px;
+    top: 95%;
+    left: 45%;
+}
+
+#banner ul li {
+    float: left;
+    display: block;
+    cursor: pointer;
+    width: 35px;
+    height: 5px;
+    background: #FFF;
+    margin-left: 20px;
+}
+
+#banner ul li.banner_nav {
+    background: #000;
+}
+
+.footer {
+    width: 1920px;
+    height: 300px;;
+    background: #ccc;
+    margin-top: 70px;
+
+}
+
+#back {
+    position: fixed;
+    top: 80%;
+    right: 5%;
+    cursor: pointer;
+}

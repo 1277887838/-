@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面试题-陈志豪</title>
+</head>
+<link type="text/css" rel="stylesheet" href="css/style.css"></link>
+
+
+<body>
+
+<div class="header">
+    <div class="text">Header</div>
+</div>
+<div class="shelter">
+    <div class="text">Shelter</div>
+</div>
+
+
+<div id="banner">
+    <div id="banner_bg"></div>
+    <ul>
+        <li id="0" class="banner_nav"></li>
+        <li id="1"></li>
+        <li id="2"></li>
+        <li id="3"></li>
+    </ul>
+    <div id="banner_list">
+        <a href="#" target="_blank"><img src="img/lunbo1.jpg"/></a>
+        <a href="#" target="_blank"><img src="img/lunbo2.jpg"/></a>
+        <a href="#" target="_blank"><img src="img/lunbo1.jpg"/></a>
+        <a href="#" target="_blank"><img src="img/lunbo2.jpg"/></a>
+    </div>
+</div>
+
+<div id="meum">
+    <ul>
+        <li><a href="#f1" class="text_hover">F1</a></li>
+        <li><a href="#f2">F2</a></li>
+        <li><a href="#f3">F3</a></li>
+        <li><a href="#f4">F4</a></li>
+        <li><a href="#f5">F5</a></li>
+    </ul>
+</div>
+
+<div class="box">
+    <div class="itme" id="f1">
+        <h1><span style="color: red">C</span>olumn1</h1>
+        <ul>
+            <li><a href=""><img src="img/tu1.jpg"></a></li>
+            <li><a href=""><img src="img/tu1.jpg"></a></li>
+            <li><a href=""><img src="img/tu1.jpg"></a></li>
+            <li><a href=""><img src="img/tu1.jpg"></a></li>
+            <li><a href=""><img src="img/tu1.jpg"></a></li>
+            <li><a href=""><img src="img/tu1.jpg"></a></li>
+            <li><a href=""><img src="img/tu1.jpg"></a></li>
+            <li><a href=""><img src="img/tu1.jpg"></a></li>
+        </ul>img/
+
+    </div>
+</div>
+<div class="box">
+    <div class="itme" id="f2">
+        <h1><span style="color: red">C</span>olumn2</h1>
+        <ul>
+            <li><a href=""><img src="img/tu2.jpg"></a></li>
+            <li><a href=""><img src="img/tu2.jpg"></a></li>
+            <li><a href=""><img src="img/tu2.jpg"></a></li>
+            <li><a href=""><img src="img/tu2.jpg"></a></li>
+            <li><a href=""><img src="img/tu2.jpg"></a></li>
+            <li><a href=""><img src="img/tu2.jpg"></a></li>
+            <li><a href=""><img src="img/tu2.jpg"></a></li>
+            <li><a href=""><img src="img/tu2.jpg"></a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="box">
+    <div class="itme" id="f3">
+        <h1><span style="color: red">C</span>olumn3</h1>
+        <ul>
+            <li><a href=""><img src="img/tu3.jpg"></a></li>
+            <li><a href=""><img src="img/tu3.jpg"></a></li>
+            <li><a href=""><img src="img/tu3.jpg"></a></li>
+            <li><a href=""><img src="img/tu3.jpg"></a></li>
+            <li><a href=""><img src="img/tu3.jpg"></a></li>
+            <li><a href=""><img src="img/tu3.jpg"></a></li>
+            <li><a href=""><img src="img/tu3.jpg"></a></li>
+            <li><a href=""><img src="img/tu3.jpg"></a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="box">
+    <div class="itme" id="f4">
+        <h1><span style="color: red">C</span>olumn4</h1>
+        <ul>
+            <li><a href=""><img src="img/tu4.jpg"></a></li>
+            <li><a href=""><img src="img/tu4.jpg"></a></li>
+            <li><a href=""><img src="img/tu4.jpg"></a></li>
+            <li><a href=""><img src="img/tu4.jpg"></a></li>
+            <li><a href=""><img src="img/tu4.jpg"></a></li>
+            <li><a href=""><img src="img/tu4.jpg"></a></li>
+            <li><a href=""><img src="img/tu4.jpg"></a></li>
+            <li><a href=""><img src="img/tu4.jpg"></a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="box">
+    <div class="itme" id="f5">
+        <h1><span style="color: red">C</span>olumn5</h1>
+        <ul>
+            <li><a href=""><img src="img/tu5.jpg"></a></li>
+            <li><a href=""><img src="img/tu5.jpg"></a></li>
+            <li><a href=""><img src="img/tu5.jpg"></a></li>
+            <li><a href=""><img src="img/tu5.jpg"></a></li>
+            <li><a href=""><img src="img/tu5.jpg"></a></li>
+            <li><a href=""><img src="img/tu5.jpg"></a></li>
+            <li><a href=""><img src="img/tu5.jpg"></a></li>
+            <li><a href=""><img src="img/tu5.jpg"></a></li>
+        </ul>
+
+    </div>
+</div>
+
+<div id="back">
+    <img src="img/db.jpg">
+</div>
+
+<div class="footer">
+    <div style="padding-top: 140px;" class="text">Footer</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+
+    var t = n = 0, count;
+    $(document).ready(function () {
+        count = $("#banner_list a").length;
+        $("#banner_list a:not(:first-child)").hide();
+        $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+        $("#banner_info").click(function () {
+            window.open($("#banner_list a:first-child").attr('href'), "_blank")
+        });
+        $("#banner li").click(function () {
+            //var i = $(this).id - 1;//获取Li元素内的值，即1，2，3，4
+            var i = $(this).attr("id");
+            console.log(i);
+            n = i;
+            if (i >= count) return;
+            $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+            $("#banner_info").unbind().click(function () {
+                window.open($("#banner_list a").eq(i).attr('href'), "_blank")
+            })
+            $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+            document.getElementById("banner").style.background = "";
+            $(this).toggleClass("banner_nav");
+            $(this).siblings().removeAttr("class");
+        });
+        t = setInterval("showAuto()", 4000);
+        $("#banner").hover(function () {
+            clearInterval(t)
+        }, function () {
+            t = setInterval("showAuto()", 4000);
+        });
+    })
+
+    function showAuto() {
+        n = n >= (count) ? 0 : ++n;
+        $("#banner li").eq(n).trigger('click');
+    }
+
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var mytop = $(window).scrollTop();
+            var meum = $("#meum");
+            var items = $(".box").find(".itme");
+            var text_hoverId = "";
+            items.each(function () {
+                var a = $(this);
+                var itemtop = a.offset().top;
+                if (mytop > itemtop - 200) {
+                    text_hoverId = "#" + a.attr("id");
+                }
+                else {
+                    return false;
+                }
+            })
+            //设置当前楼层样式, 并取消其他楼层样式
+            var text_hoverLink = meum.find(".text_hover");
+            if (text_hoverId && text_hoverLink.attr("href") != text_hoverId) {
+                text_hoverLink.removeClass("text_hover");
+                meum.find("[href=" + text_hoverId + "]").addClass("text_hover");
+            }
+        })
+
+    })
+    //导航栏1200显示
+
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var shelters = $(".shelter")
+            shelters.each(function () {
+                var b = $(this);
+                var t = b.offset().top;
+                //console.log(t)
+                if (t > 1500) {
+                    $(".shelter").fadeIn(1000);
+                }
+                else {
+                    $(".shelter").fadeOut(1000);
+                }
+
+            })
+        })
+    })
+
+    //回到顶部按钮
+    $(function () {
+        //当滚动条的一屏后出现
+        $(function () {
+            $(window).scroll(function () {
+                var dbtop = $(window).height();
+                if ($(window).scrollTop() > dbtop) {
+                    $("#back").fadeIn(1000);
+                }
+                else {
+
+                    $("#back").fadeOut(1000);
+                }
+            });
+
+            //当点击跳转链接后，回到页面顶部位置
+
+            $("#back").click(function () {
+                $('body,html').animate({scrollTop: 0}, 1000);
+                return false;
+            });
+        });
+    });
+
+</script>
+
+
+</body>
+</html>
